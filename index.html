@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Improve by Daybeam</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-color: #333333;
+            --secondary-text: #666666;
+            --background: #FFFFFF;
+            --light-gray: #F5F5F7;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 48px;
+            --spacing-xl: 80px;
+            --border-radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background: var(--background);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+        
+        header {
+            padding: var(--spacing-md) 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-weight: 600;
+            font-size: 20px;
+            color: var(--primary-color);
+        }
+        
+        .hero {
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            color: var(--secondary-text);
+            max-width: 600px;
+            margin: 0 auto var(--spacing-lg);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 100px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: var(--spacing-md);
+            transition: transform 0.15s ease;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .device-mockup {
+            background: var(--light-gray);
+            border-radius: var(--border-radius);
+            width: 280px;
+            height: 560px;
+            margin: var(--spacing-lg) auto;
+            position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .device-notch {
+            width: 120px;
+            height: 24px;
+            background: var(--background);
+            border-radius: 0 0 12px 12px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .features {
+            padding: var(--spacing-xl) 0;
+            background: var(--light-gray);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+        }
+        
+        .feature-card {
+            background: var(--background);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-md);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-title {
+            font-size: 20px;
+            margin-bottom: var(--spacing-sm);
+            color: var(--primary-color);
+        }
+        
+        .feature-description {
+            color: var(--secondary-text);
+        }
+        
+        .company {
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        .company-info {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        footer {
+            padding: var(--spacing-md) 0;
+            text-align: center;
+            font-size: 14px;
+            color: var(--secondary-text);
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            .subtitle {
+                font-size: 20px;
+            }
+            
+            .hero, .features, .company {
+                padding: var(--spacing-lg) 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="logo">Daybeam</div>
+        <nav>
+            <!-- Minimalist navigation can be added here if needed -->
+        </nav>
+    </header>
+    
+    <section class="hero container">
+        <h1>Golf Improve</h1>
+        <p class="subtitle">Track your golf game with precision. Get insights that help you improve.</p>
+        <div class="device-mockup">
+            <div class="device-notch"></div>
+            <!-- App screenshot would go here -->
+        </div>
+        <a href="#" class="cta-button">Download on the App Store</a>
+    </section>
+    
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Premium Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3 class="feature-title">Shot Tracking</h3>
+                    <p class="feature-description">Record every shot with intuitive tracking tools that capture the details that matter.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Performance Insights</h3>
+                    <p class="feature-description">AI-powered analysis shows you patterns and opportunities to improve your game.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="company container">
+        <div class="company-info">
+            <h2 class="section-title">About Daybeam</h2>
+            <p>Daybeam is dedicated to creating premium applications that enhance performance and deliver exceptional user experiences. Golf Improve represents our commitment to helping golfers elevate their game through technology.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Daybeam. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
